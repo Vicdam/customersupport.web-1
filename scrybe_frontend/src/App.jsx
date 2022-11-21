@@ -6,7 +6,7 @@ import TranscribePage from "./pages/TranscribePage/TranscribePage";
 import { FAQs, TermsOfService } from "./pages";
 import LandingPage from "./pages/landing-page-a";
 import PageB from "./pages/Landing-page-b";
-import TermsAndCondition from "./pages/TermsAndCondition/index";
+import TermsAndCondition from "./pages/TermsAndCondition/TermsOfService";
 import History from "./pages/History/History";
 import Solutions from "./pages/SolutionPage";
 import Services from "./pages/ServicePage";
@@ -27,12 +27,12 @@ import Account from "./pages/Account";
 import Signin from "./pages/SignIn/SignIn";
 import Careers from "./pages/Careers";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import IndustryArticle from "./components/Industry/industryArticle";
 import Signup from "./pages/SignUp/SignUp";
-import Successful from "./pages/Successful/Successful";
-import SetNewPassword from "./pages/SetNewPassword/SetNewPassword";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 import PasswordResetSuccessful from "./pages/PasswordResetSuccessful/PasswordResetSuccessful";
+import SetNewPassword from "./pages/SetNewPassword/SetNewPassword";
+import Successful from "./pages/Successful/Successful";
+import Reviews from "./pages/Reviews/Reviews";
 
 function App() {
   return (
@@ -90,7 +90,6 @@ function App() {
       {/* industry */}
       <Route path="/industry" element={<Industry />} />
       {/* industry article */}
-      <Route path="/industryarticle" element={<IndustryArticle />} />
       {/* how it works */}
       <Route path="/how-it-works" element={<HowitWorks />} />
       {/* demo pages */}
@@ -152,6 +151,21 @@ function App() {
         element={<PasswordResetSuccessful />}
       />
       <Route path="/uploaded-recordings" element={<UploadedRecordings />} />
+      {/* Sign Up */}
+      <Route path="/create-account" element={<Signup />} />
+      {/* Forget Password*/}
+      <Route path="/forget-password" element={<ForgetPassword />} />
+      {/* Password Reset*/}
+      <Route
+        path="/pw-reset-successful"
+        element={<PasswordResetSuccessful />}
+      />
+      {/* Set New Password*/}
+      <Route path="/set-new-password" element={<SetNewPassword />} />
+      {/* Password Reset Successful*/}
+      <Route path="/reset-successful" element={<Successful />} />
+      {/* Reviews*/}
+      <Route path="/reviews" element={<Reviews />} />
     </Routes>
   );
 }
