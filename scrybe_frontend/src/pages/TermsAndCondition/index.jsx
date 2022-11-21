@@ -1,6 +1,6 @@
 import React from "react";
-import Content from "../../components/terms and condition/Content";
-import styles from "./termsOfService.module.scss";
+import Content from "./components/Content";
+import styles from "./TermsAndCondition.module.scss";
 
 function TermsOfService() {
   return (
